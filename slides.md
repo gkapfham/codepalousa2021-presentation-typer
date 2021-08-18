@@ -11,81 +11,32 @@ fonts:
   mono: Fira Code
   italic: true
 info: |
-  ## Simple-slidev-sample
-  Simple Slidev Sample
-title: Type Annotations in Python
+  ## CodepaLOUsa 2021
+  CodepaLOUsa 2021
+title: Great on their Own, Even Better Together
 ---
 
-# Type Annotations in Python
+# Great on their Own, Even Better Together
 
 <style>
   code {
     font-size: 36px;
   }
+  h2 {
+    margin-bottom: -15px;
+  }
 </style>
 
-## Terribly Intimidating or Tremendously Informative?
+## Application Development with
+## Python, Typer, and Poetry
 
-<div class="container my-1">
- &nbsp;
+<div class="container my-5">
+  &nbsp;
 </div>
 
 ### Gregory M. Kapfhammer
 
-### PyOhio 2021
-
-<div class="container my-5">
- &nbsp;
-</div>
-
-```python {all}
-def start(t: Talk) -> List[Fun, Learn]:
-```
-
-<!--
-
-Hello, my name is Gregory Kapfhammer. I'm a computer science professor and a
-software engineer and I have a question: "are you a Python programmer who wants
-to write high quality software? " If you are, then I hope that you will stay
-tuned to this talk! It will reveal how the use of type annotations can make it
-easier to add features to your program. It will also show how types help to find
-bugs in your Python code.
-
-Type annotations tell both tools and developers about the kind of data stored in
-a variable. If you are like me, then you might have found that these annotations
-are terribly intimidating. However, I kept us¡ng type annotations in several of
-my recent Python projects and now I find them to be tremendously informative!
-
-I don't always add type annotations to my programs and, of course, I still get
-confused and make mistakes some times. However, my current view is that
-when linting and testing are combined with types and type checkers, I write
-better Python programs with fewer defects.
-
-Do you want to learn more about type annotations in Python? Are you interested
-in learning to use cool new tools that improve programmer productivity? Let's
-dive into the presentation!
-
-The title of this talk is "Type Annotations in Python: Terribly Intimidating or
-Tremendously Informative?" and it was originally given at PyOhio 2021.
-
-In it I share my experiences with using type annotations in a Python
-project that I created recently to download information about the run of GitHub
-Action workflows from GitHub's REST API.
-
-**CUT IN SHORT VERSION**
-
-But first, check out the start function at the bottom of this slide.
-
-**Explain**:
-
-- The talk parameter
-- That Union[Fun, Info] means that the talk could either be fun or informative
-- That List[Fun, Into] suggests that the talk could be both fun and informative
-
-Let's pick the second option in hopes that this talk is both fun and informative
-for you!
-
--->
+### CodepaLOUsa 2021
 
 ---
 
