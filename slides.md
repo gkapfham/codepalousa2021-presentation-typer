@@ -16,6 +16,8 @@ info: |
 title: Great on their Own, Even Better Together
 ---
 
+[//]: # (Slide Start {{{)
+
 # Great on their Own, Even Better Together
 
 <style>
@@ -23,7 +25,12 @@ title: Great on their Own, Even Better Together
     font-size: 36px;
   }
   h2 {
-    margin-bottom: -15px;
+    font-size: 36px;
+    @apply -mb-8 mt-2;
+  }
+  h3 {
+    font-size: 36px;
+    @apply text-blue-600 -mb-5;
   }
 </style>
 
@@ -38,7 +45,11 @@ title: Great on their Own, Even Better Together
 
 ### CodepaLOUsa 2021
 
+[//]: # (Slide End }}})
+
 ---
+
+[//]: # (Slide Start {{{)
 
 # <em>Okay</em>, what is this about?
 
@@ -85,34 +96,7 @@ Let's explore type annotations in Python programs!
 
 </div>
 
-<!--
-
-At the start of this talk, let's ask and answer another question: what is this
-presentation about?
-
-First, the talk has two key questions:
-
-- What are the benefits and challenges associated with using type annotations in
-Python programs?
-- Will types make me a better Python programmer?
-
-I will answer both of those questions by highlighting how type annotations
-helped me to recently write some Python functions.
-
-I had you in mind when I was preparing this talk if you are an adventuresome
-Python programmer who wants to explore how type annotations --- and their new
-paradigm for thinking and their affiliated software tools --- can improve your
-development workflow.
-
-Don't be concerned if you have never used types before or if you found them
-confusing the last time you tried to add them to your Python program. And, if
-you are an programmer who frequently uses type annotations, I hope that your
-adventuresome spirit will convince you to stick around since I'm hopeful that
-you will learn something new in the next ten minutes.
-
-Okay, let's explore some type annotations in Python programs!
-
--->
+[//]: # (Slide End }}})
 
 ---
 
