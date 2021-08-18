@@ -7,7 +7,7 @@
   }
 
   h2 {
-    @apply text-4xl leading-20 font-bold text-blue-600;
+    @apply text-4xl leading-20 font-bold text-blue-600 -mb-5;
   }
 
   h3 {
