@@ -20,20 +20,6 @@ title: Great on their Own, Even Better Together
 
 # Great on their Own, Even Better Together
 
-<style>
-  code {
-    font-size: 36px;
-  }
-  h2 {
-    font-size: 36px;
-    @apply -mb-8 mt-2;
-  }
-  h3 {
-    font-size: 36px;
-    @apply text-blue-600 -mb-5;
-  }
-</style>
-
 ## Application Development with
 ## Python, Typer, and Poetry
 
@@ -66,8 +52,9 @@ title: Great on their Own, Even Better Together
 
 ## Key Questions
 
-> What are the **benefits** and **challenges** associated with using type annotations
-> inside of Python program? Will types make me a better programmer?
+> What are the **benefits** and **challenges** associated with using the Python
+> language, Typer, and Poetry for creating command-line
+> applications?
 
 </div>
 
@@ -77,8 +64,8 @@ title: Great on their Own, Even Better Together
 
 ## Intended Audience
 
-> An **adventuresome** Python programmer who wants to explore how both a new
-> **paradigm** and software **tools** can improve their development skills!
+> An **adventuresome** technology enthusiast who wants to explore how both a
+> new **paradigm** and software **tools** can improve their development skills!
 
 </div>
 
@@ -89,7 +76,7 @@ title: Great on their Own, Even Better Together
 <uim-rocket class="text-6xl ml-8 mt-5 text-blue-600" />
 
 <div class="text-3xl font-bold mt-8 ml-4">
-Let's explore type annotations in Python programs!
+Let's create a command-line application in Python!
 </div>
 
 </div>
