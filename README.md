@@ -6,10 +6,8 @@
 
 Slides created by [Gregory M. Kapfhammer](https://www.gregorykapfhammer.com/)
 for a presentation given at [PyOhio 2021](https://www.pyohio.org/2021/). The
-title of the presentation is "Type Annotations in Python: Terribly
-Intimidating or Tremendously Informative?". You can [watch a YouTube
-video](https://youtu.be/6bCBl-soYFg) of the talk or [view the live version of
-the slides](https://pyohio2021-presentation.netlify.app/).
+title of the presentation is "Great On Their Own, Even Better Together:
+Application Development with Python, Typer, and Poetry".
 
 ## Installation
 
