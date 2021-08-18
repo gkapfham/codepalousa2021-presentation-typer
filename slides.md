@@ -87,176 +87,54 @@ Let's create a command-line application in Python!
 
 ---
 
-# Python Program without Annotations
+[//]: # (Slide Start {{{)
 
-<div class="-ml-0">
-
-```python {all|1|3|4-5|6-7|8|all}
-def extract_urls(df):
-    """Extract a list of urls."""
-    urls = []
-    if "Url" in df.columns:
-        urlc = df["Url"]
-        if urlc is not None:
-            urls = urlc.tolist()
-    return urls
-```
-
-</div>
-
-<br>
-
-<v-clicks>
-
-<p class = "bold">
-What is the type of <code>df</code> ? The terrible docstring does not say!
-</p>
-
-<p class = "bold">
-What is the behavior of <code>return urls</code> in this function?
-</p>
-
-</v-clicks>
-
-<!--
-
-Here is an example of a Python function that does not have any type annotations.
-You have probably seen many functions like this when you are reading online
-tutorials. This one is called extract_urls and it extracts all of the URLs from
-a column of a variable called df.
-
-Let's walk through each line in this function:
-
-**Explain each highlighted line of the function
-
-Now that we understand the inputs, outputs, and behavior of this function, let's
-ask and answer some questions about it.
-
-- What is the type of the df parameter? Sadly, the terrible docstring for this
-function does not say. If you have programmed with the Pandas package before
-then you might guess that it is a data frame. However, you would have to study
-other parts of the program to be sure!
-
-The second question is:
-
-- What is the behavior of the return urls statement in this function?
-Specifically, what is the type of data that this function returns? In this
-specific case, we can scan the rest of the function's source code to note that
-urls is a variable of type list. However, this version of the function
-does not reveal the type of the data stored in the list!
-
--->
-
----
-
-# Python Program without Annotations
+# Why focus on Python Programs?
 
 <style>
+  h2 {
+    font-size: 36px;
+    @apply text-orange-600 mb-4;
+  }
 </style>
 
-<div class="-ml-0">
+<br>
 
-```python
-def extract_urls(df):
-    """Extract a list of urls."""
-    urls = []
-    if "Url" in df.columns:
-        urlc = df["Url"]
-        if urlc is not None:
-            urls = urlc.tolist()
-    return urls
-```
+<div v-click>
+
+## Prevalence of Python
+
+> Python is consistently ranked as one of the **top programming languages**
+> for web development, data science, machine learning, and general programming
 
 </div>
 
 <br>
+
+<div v-click>
+
+## Command-Line Interface
+
+> Programmers who start using Python through Jupyter notebooks may need to
+> create **tools** and **servers** that require a command-line interface
+
+</div>
+
+<div v-click>
 
 <div class="flex row">
 
-<uim-refresh class="text-6xl ml-2 mt-4 text-orange-600" />
+<mdi-help-box class="text-6xl ml-8 mt-4 text-blue-600" />
 
 <div class="text-3xl font-bold mt-8 ml-4">
-What happens if the program becomes more complex?
+What is challenging about programming in Python?
 </div>
 
 </div>
 
-<!--
-
-*Continued from previous slide*
-
-<br>
-
-With that said, it is important to note that if this function was a part of a
-more complex Python program then it would become more difficult to have a
-full-featured understanding of the inputs, outputs, and behavior of
-extract_urls. For instance, if the function had more lines of code it would be
-more difficult for a programmer to see that urls is a list. And, remember,
-discovering that it is a list would not reveal the type of data that the list
-stores!
-
--->
-
----
-
-# Python Program with Annotations
-
-<div class="-ml-9">
-
-```python {all|1}
-def extract_urls(df: pandas.DataFrame) -> List[str]:
-    """Extract a list of urls."""
-    urls = []
-    if "Url" in df.columns:
-        urlc = df["Url"]
-        if urlc is not None:
-            urls = urlc.tolist()
-    return urls
-```
-
 </div>
 
-<br>
-
-<v-clicks>
-
-<p class = "bold">
-What is the purpose of <code>df: pandas.DataFrame</code> ?
-</p>
-
-<p class = "bold">
-How does <code>List[str]</code> describe output of <code>extract_urls</code> ?
-</p>
-
-</v-clicks>
-
-<!--
-
-This is a version of the extract_urls function that uses type annotations. You
-will notice that the main difference between this function and the previous
-version is that its signature is different. Let's take a look at it more closely
-and answer some questions about its syntax and semantics.
-
-The first question to ask and answer is:
-
-- What is the purpose of df: pandas.DataFrame?
-
-In response to this question, note that df is the variable and pandas.DataFrame
-is the type annotation for the variable. This type annotation tells the
-programmer --- and the tools used by the programmer --- that df contains tabular
-data in the form of a DataFrame.
-
-The second question is:
-
-- How does List[str] describe the output of the extract_urls functions?
-
-In this case, the type annotation clearly reveals that the list returned by this
-function must contain string variables. The type annotation will help the
-programmer to understand the function's output while also enabling tools like
-type checkers to ensure that all functions calling this one store the return
-value in a list designed for strings.
-
--->
+[//]: # (Slide End }}})
 
 ---
 
