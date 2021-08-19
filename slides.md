@@ -89,7 +89,7 @@ Let's create a command-line application in Python!
 
 [//]: # (Slide Start {{{)
 
-# Why focus on Python programs?
+# Why focus on Python programming?
 
 <style>
   h2 {
@@ -190,7 +190,7 @@ Publishing packages to PyPI
 Making command-line interfaces
 </div>
 
-<div class="text-8xl text-true-gray-600 font-bold mt-13 mr-19">
+<div class="text-8xl text-true-gray-600 font-bold mt-14 mr-19">
 <ul>
 <li> argparse </li>
 <li> fire </li>
@@ -263,8 +263,8 @@ Poetry: <code>https://python-poetry.org/</code>
 </style>
 
 - *Annotations* : assign types to functions accepting arguments
-- *Productivity* : programmers often must add type annotations
-- *Complexity* : programs use many new classes and types
+- *Productivity* : types aid in the creation of the interface
+- *Checking* : confirm that inputs match expected types
 
 </div>
 
@@ -276,7 +276,7 @@ Poetry: <code>https://python-poetry.org/</code>
 
 - *Environments* : manage dependencies in isolation
 - *Package* : create a stand-alone executable application
-- *Publish* : expedite the release of program to PyPI
+- *Publish* : expedite and simplify the release of program to PyPI
 
 </div>
 
@@ -288,10 +288,10 @@ Poetry: <code>https://python-poetry.org/</code>
 
 <div class="flex row">
 
-<uim-visual-studio class="text-6xl ml-8 mt-5 text-blue-600" />
+<uim-scenery class="text-6xl ml-8 mt-5 text-blue-600" />
 
 <div class="text-3xl font-bold mt-8 ml-4">
-Pyright language server in VS Code and Neovim
+New way to manage application dependencies
 </div>
 
 </div>
@@ -305,7 +305,7 @@ Pyright language server in VS Code and Neovim
 <uim-grid class="text-6xl ml-8 mt-5 text-blue-600" />
 
 <div class="text-3xl font-bold mt-8 ml-4">
-Mypy static type checker in terminal or editor
+Adjust to the challenge of adding type annotations
 </div>
 
 </div>
@@ -320,7 +320,7 @@ Mypy static type checker in terminal or editor
 
 <div class="flex row">
 
-<uim-layer-group class="text-8xl ml-9 mt-8 text-orange-600" />
+<uim-repeat class="text-8xl ml-9 mt-8 text-orange-600" />
 
 <div class="text-6xl text-true-gray-600 font-bold mt-8 ml-4">
 Easy command-line interface with Typer
@@ -330,10 +330,10 @@ Easy command-line interface with Typer
 
 <div class="flex row">
 
-<uim-line class="text-8xl ml-9 mt-8 text-orange-600" />
+<uim-layer-group class="text-8xl ml-9 mt-8 text-orange-600" />
 
 <div class="text-6xl text-true-gray-600 font-bold mt-8 ml-4">
-Quickly find a defect that crashes a program
+Manage, package, and release with Poetry
 </div>
 
 </div>
@@ -379,6 +379,72 @@ Okay, let's dive into my experience with using type annotations to build this
 tool!
 
 -->
+
+---
+
+[//]: # (Slide Start {{{)
+
+# Creating the Application with Poetry
+
+<style>
+  h2 {
+    font-size: 36px;
+    @apply text-orange-600 mb-4 font-mono;
+  }
+  ul {
+    @apply text-7xl text-orange-600 mb-4;
+  }
+</style>
+
+<br>
+
+<div v-click>
+
+## poetry new workknow
+
+<div class="flex row">
+
+<div class="border-2 rounded-2xl border-gray-700 bg-true-gray-300 p-5 mr-15">
+
+<pre>
+├── coverage.xml
+├── poetry.lock
+├── pyproject.toml
+├── README.md
+├── tests
+│  ├── __init__.py
+│  ├── test_constants.py
+│  └── test_request.py
+└── workknow
+   ├── __init__.py
+   ├── analyze.py
+   ├── concatenate.py
+   ├── configure.py
+   ├── constants.py
+   ├── display.py
+   ├── environment.py
+   ├── files.py
+   ├── main.py
+</pre>
+
+</div>
+
+<div class="flex row mt-19 text-2xl">
+
+- Create a simple directory structure
+- Default support for testing with Pytest
+- Store separate modules in directory
+- The main file stores command-line interface
+- The pyproject.toml file stores dependencies
+- The poetry.lock file pins dependencies
+
+</div>
+
+</div>
+
+</div>
+
+[//]: # (Slide End }}})
 
 ---
 
