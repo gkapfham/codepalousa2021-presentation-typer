@@ -886,10 +886,104 @@ Program is available for installation with pip or pipx!
 
 [//]: # (Slide End }}})
 
+---
+
+[//]: # (Slide Start {{{)
+
+<div class="flex row">
+
+<div class="text-7xl text-orange-600 font-bold mt-5 ml-4 mb-4">
+Best way to easily create command-line tools using modern Python?
+</div>
+
+</div>
+
+<div v-click>
+
+<div class="flex row">
+
+<uim-repeat class="text-6xl ml-8 mt-6 text-blue-600" />
+
+<div class="text-5xl font-bold mt-8 ml-4">
+Typer: <code>https://typer.tiangolo.com/</code>
+</div>
+
+</div>
+
+</div>
+
+<div v-click>
+
+<div class="flex row">
+
+<uim-layer-group class="text-6xl ml-8 mt-6 text-blue-600" />
+
+<div class="text-5xl font-bold mt-8 ml-4">
+Poetry: <code>https://python-poetry.org/</code>
+</div>
+
+</div>
+
+</div>
+
+[//]: # (Slide End }}})
 
 ---
 
-# Type Annotations in Python
+[//]: # (Slide Start {{{)
+
+<div class="flex row">
+
+<div class="text-7xl text-orange-600 font-bold mt-3 ml-4 mb-2">
+Great resources for learning more about these Python tools?
+</div>
+
+</div>
+
+<div v-click>
+
+<div class="flex row">
+
+<div class="text-4xl font-bold mt-8 ml-4">
+https://typer.tiangolo.com/tutorial/package/
+</div>
+
+</div>
+
+</div>
+
+<div v-click>
+
+<div class="flex row">
+
+<div class="text-3xl font-bold mt-8 ml-4">
+https://realpython.com/effective-python-environment/
+</div>
+
+</div>
+
+</div>
+
+<div v-click>
+
+<div class="flex row">
+
+<uim-comment-message class="text-6xl ml-8 mt-8 text-blue-600" />
+
+<div class="text-3xl font-bold mt-12 ml-4">
+Share your experiences with the Python community!
+</div>
+
+</div>
+
+</div>
+
+
+[//]: # (Slide End }}})
+
+---
+
+# Tool Development with Python
 
 <style>
   h1 {
@@ -903,7 +997,7 @@ Program is available for installation with pip or pipx!
   }
 </style>
 
-## Terribly Intimidating or Tremendously Informative?
+## Easily combine the use of Typer and Poetry
 
 <v-clicks>
 
@@ -912,7 +1006,7 @@ Program is available for installation with pip or pipx!
 <uim-exclamation-triangle class="text-7xl ml-0 mt-0 text-blue-600" />
 
 <div class="text-4xl font-medium mt-6 ml-4">
-Programmers define types
+Programmers define types for functions
 </div>
 
 </div>
@@ -922,7 +1016,7 @@ Programmers define types
 <uim-layer-group class="text-7xl ml-0 mt-8 text-blue-600" />
 
 <div class="text-4xl font-medium mt-12 ml-4">
-Automatically create command-line
+Create program's command-line with Typer
 </div>
 
 </div>
@@ -932,32 +1026,16 @@ Automatically create command-line
 <uim-layers-alt class="text-7xl ml-0 mt-8 text-blue-600" />
 
 <div class="text-4xl font-medium mt-12 ml-4">
-Type checkers automatically find bugs
+Poetry handles dependencies and releases
 </div>
 
 </div>
 
 </v-clicks>
 
-<!--
-
-So, what have I introduced in this talk?
-
-First, I showed you how a programmer can define type annotations in their Python
-program. Although these annotations take time to add and can make a program
-appear more complex, they have a myriad of benefits!
-
-For instance, when you use the Typer package it will automatically create a
-robust and well-documented command line interface! Make sure that you search
-for Typer and read its the exceptional documentation.
-
-The talk also showed how typer checkers can automatically find bugs.
-
--->
-
 ---
 
-# Type Annotations in Python
+# Tool Development with Python
 
 <style>
   h1 {
@@ -971,7 +1049,7 @@ The talk also showed how typer checkers can automatically find bugs.
   }
 </style>
 
-## Yes, they are Tremendously Informative! Try them!
+## Typer and Poetry provide an "opinionated" option
 
 <v-clicks>
 
@@ -999,30 +1077,10 @@ https://www.gregorykapfhammer.com/
 
 <uim-github class="text-7xl ml-0 mt-8 text-blue-600" />
 
-<div class="text-4xl font-medium mt-12 ml-4">
-gkapfham/pyohio2021-presentation
+<div class="text-3xl font-medium mt-14 ml-4">
+gkapfham/codepalousa2021-presentation-typer
 </div>
 
 </div>
 
 </v-clicks>
-
-<!--
-
-I'm hoping that you are now saying to yourself that, yes, type annotations in
-Python are tremendously informative!
-
-Whether or not you are now convinced of this fact, I hope that you will try them
-soon. If you want see a Python program that is using type annotations, check out
-WorkKnow's GitHub repository.
-
-Once you have formed your own opinion about type annotations, I hope that you
-will get in touch with me through my web site and leave a comment on YouTube.
-
-Oh, one last thing! Are you interested in seeing the source code for my slides?
-If so, please check the GitHub repository for their source code!
-
-Okay, thanks for your attention! Now, get out there and write some Python code
-with type annotations!
-
--->
