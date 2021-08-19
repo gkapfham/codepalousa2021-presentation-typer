@@ -717,6 +717,61 @@ What else is possible when using Poetry?
 
 ---
 
+[//]: # (Slide Start {{{)
+
+## Specifying Tasks with Poetry
+
+<style>
+  h2 {
+    font-size: 42px;
+    @apply text-orange-600 mb-4;
+  }
+  li {
+    font-size: 28px;
+    margin-top: 4px;
+    margin-bottom: 9px;
+  }
+</style>
+
+<div class="border-2 rounded-2xl border-gray-700 bg-true-gray-300 p-5">
+
+<pre>
+[tool.taskipy.tasks]
+black = { cmd = "black workknow tests --check" }
+coverage = { cmd = "pytest -s --cov-config .coveragerc [...] }
+flake8 = { cmd = "flake8 workknow tests" }
+mypy = { cmd = "poetry run mypy workknow" }
+pydocstyle = { cmd = "pydocstyle workknow tests" }
+pylint = { cmd = "pylint workknow tests" }
+test = { cmd = "pytest -x -s" }
+</pre>
+
+</div>
+
+<div v-click>
+
+<div class="flex row">
+
+<uim-rocket class="text-9xl ml-5 mt-5 text-blue-600" />
+
+<div class="text-3xl font-bold mt-7 ml-4">
+
+- Combining Poetry with Taskipy offers:
+  - automatically generate all menus
+  - perform error checking on all arguments
+  - convert all arguments to the correct type
+
+</div>
+
+</div>
+
+</div>
+
+[//]: # (Slide End }}})
+
+
+---
+
 # Type Annotations in Python
 
 <style>
