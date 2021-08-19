@@ -89,7 +89,7 @@ Let's create a command-line application in Python!
 
 [//]: # (Slide Start {{{)
 
-# Why focus on Python Programs?
+# Why focus on Python programs?
 
 <style>
   h2 {
