@@ -297,7 +297,7 @@ Poetry: <code>https://python-poetry.org/</code>
 
 <uim-scenery class="text-6xl ml-8 mt-5 text-blue-600" />
 
-<div class="text-3xl font-bold mt-8 ml-4">
+<div class="text-3xl font-bold mt-9 ml-4">
 New way to manage application dependencies
 </div>
 
@@ -311,7 +311,7 @@ New way to manage application dependencies
 
 <uim-grid class="text-6xl ml-8 mt-5 text-blue-600" />
 
-<div class="text-3xl font-bold mt-8 ml-4">
+<div class="text-3xl font-bold mt-9 ml-4">
 Adjust to the challenge of adding type annotations
 </div>
 
@@ -878,6 +878,74 @@ Next steps for a Poetry-based application?
 
 <div class="text-3xl font-bold mt-8 ml-4">
 Program is available for installation with pip or pipx!
+</div>
+
+</div>
+
+</div>
+
+[//]: # (Slide End }}})
+
+---
+
+[//]: # (Slide Start {{{)
+
+<div class="ml-8 grid grid-cols-2 gap-19">
+<div>
+
+# Challenges
+
+<style>
+  li {
+  font-size: 22px;
+  margin-bottom: 10px;
+  }
+</style>
+
+- Not stand-alone binary, so program needs Python to run
+- Poetry and Typer are relatively new tools, so defects are possible
+- Typer only works if you use type annotations, so extra work needed
+
+</div>
+
+<div v-click>
+
+<div>
+
+# Benefits
+
+- Poetry seamlessly manages dependencies and environments
+- Typer automatically creates the command-line interface
+- Poetry makes task running and publishing to PyPI effortless
+
+</div>
+
+</div>
+
+</div>
+
+<div v-click>
+
+<div class="flex row">
+
+<uim-scenery class="text-6xl ml-8 mt-5 text-blue-600" />
+
+<div class="text-3xl font-bold mt-9 ml-4">
+Two packages to build command-line tools in Python!
+</div>
+
+</div>
+
+</div>
+
+<div v-click>
+
+<div class="flex row mt-4">
+
+<uim-chart-pie class="text-6xl ml-9 mt-5 text-blue-600" />
+
+<div class="text-3xl font-bold mt-9 ml-4">
+Quick environments, dependencies, and releases!
 </div>
 
 </div>
