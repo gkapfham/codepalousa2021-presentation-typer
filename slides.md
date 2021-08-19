@@ -448,6 +448,8 @@ tool!
 
 ---
 
+[//]: # (Slide Start {{{)
+
 <v-click>
 
 <div class="ml-8 grid grid-cols-2 gap-9">
@@ -558,6 +560,8 @@ Poetry installs packages into the virtual environment
 
 ---
 
+[//]: # (Slide Start {{{)
+
 # Command-Line Interface with Typer
 
 <div class="ml-2 my-2">
@@ -589,6 +593,8 @@ See <code>AnalyzeActions/WorkKnow</code> for details!
 </div>
 
 </v-click>
+
+[//]: # (Slide End }}})
 
 ---
 
