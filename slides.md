@@ -138,12 +138,22 @@ What is challenging about programming in Python?
 
 ---
 
+[//]: # (Slide Start {{{)
+
 <div class="flex row">
 
-<uim-exclamation-triangle class="text-8xl ml-9 mt-8 text-orange-600" />
+<mdi-package-variant class="text-8xl ml-9 mt-8 text-orange-600" />
 
 <div class="text-6xl text-true-gray-600 font-bold mt-8 ml-4">
-Wait, isn't this more complicated?
+Creating virtual environments
+</div>
+
+<div class="text-6xl text-true-gray-600 font-bold mt-13 mr-15">
+<ul>
+<li> virtualenv </li>
+<li> venv </li>
+<li> pipenv </li>
+</ul>
 </div>
 
 </div>
@@ -152,51 +162,47 @@ Wait, isn't this more complicated?
 
 <div class="flex row">
 
-<uim-repeat class="text-8xl ml-9 mt-8 text-orange-600" />
+<mdi-package-up class="text-8xl ml-9 mt-8 text-orange-600" />
 
 <div class="text-6xl text-true-gray-600 font-bold mt-8 ml-4">
-Do type annotations have any benefits?
+Publishing packages to PyPI
 </div>
 
-</div>
-
-<div class="flex row">
-
-<uim-layers-alt class="text-8xl ml-9 mt-8 text-orange-600" />
-
-<div class="text-6xl text-true-gray-600 font-bold mt-8 ml-4">
-What are the trade-offs of type annotations?
+<div class="text-8xl text-true-gray-600 font-bold mt-15 mr-19">
+<ul>
+<li> twine </li>
+<li> flit </li>
+<li> setup.py </li>
+</ul>
 </div>
 
 </div>
 
 </v-clicks>
 
-<!--
+<v-clicks>
 
-When I first saw a Python function with type annotations several pressing
-questions came to my mind.
+<div class="flex row">
 
-First:
+<mdi-console class="text-8xl ml-9 mt-8 text-orange-600" />
 
-- Wait, isn't the function with type annotations syntactically more complicated
-than the one that does not have them?
+<div class="text-6xl text-true-gray-600 font-bold mt-8 ml-4">
+Making command-line interfaces
+</div>
 
-Second:
+<div class="text-8xl text-true-gray-600 font-bold mt-13 mr-19">
+<ul>
+<li> argparse </li>
+<li> fire </li>
+<li> click </li>
+</ul>
+</div>
 
-- Are there any real benefits to type annotations if they are going to take
-extra time for me to write them?
+</div>
 
-And, finally:
+</v-clicks>
 
-- In the context of Python programming, what are the trade-offs of type
-annotations? If they take extra time for programmers to write, can they realize
-any benefits in terms of programmer productivity or software quality?
-
-Let's investigate some of the challenges and benefits associated with adding
-type annotations to our Python programs!
-
--->
+[//]: # (Slide End }}})
 
 ---
 
