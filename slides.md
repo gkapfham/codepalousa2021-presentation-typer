@@ -316,8 +316,6 @@ Adjust to the challenge of adding type annotations
 
 ---
 
-<v-clicks>
-
 <div class="flex row">
 
 <uim-repeat class="text-8xl ml-9 mt-8 text-orange-600" />
@@ -327,6 +325,8 @@ Easy command-line interface with Typer
 </div>
 
 </div>
+
+<v-clicks>
 
 <div class="flex row">
 
@@ -391,16 +391,11 @@ tool!
     font-size: 36px;
     @apply text-orange-600 mb-4 font-mono;
   }
-  ul {
-    @apply text-7xl text-orange-600 mb-4;
-  }
   li {
-    font-size: 22px;
+    font-size: 23px;
     margin-bottom: 10px;
   }
 </style>
-
-<br>
 
 <div v-click>
 
@@ -417,6 +412,7 @@ tool!
 ├── README.md
 ├── tests
 │  ├── __init__.py
+│  ├── test_analyze.py
 │  ├── test_constants.py
 │  └── test_request.py
 └── workknow
@@ -435,7 +431,7 @@ tool!
 
 <v-click>
 
-<div class="flex row mt-18 text-2xl">
+<div class="flex row mt-18 text-3xl">
 
 - Create a simple directory structure
 - Default support for testing with Pytest
@@ -447,6 +443,111 @@ tool!
 </div>
 
 </v-click>
+
+</div>
+
+</div>
+
+[//]: # (Slide End }}})
+
+---
+
+<div class="ml-8 grid grid-cols-2 gap-9">
+
+<div>
+
+## Application
+
+<style>
+  h2 {
+    font-size: 36px;
+    @apply text-orange-600 mb-4;
+  }
+  li {
+    font-size: 22px;
+    margin-bottom: 10px;
+  }
+</style>
+
+<div class="border-2 rounded-2xl border-gray-700 bg-true-gray-300 p-5 mr-15">
+
+<pre>
+[tool.poetry.dependencies]
+python = "^3.8"
+typer = {extras = ["all"],
+         version = "^0.3.2"}
+rich = "^10.5.0"
+requests = "^2.25.1"
+python-dotenv = "^0.18.0"
+pandas = "^1.3.0"
+giturlparse = "^0.10.0"
+types-pytz = "^2021.1.0"
+PyGithub = "^1.55"
+pluginbase = "^1.0.1"
+tabulate = "^0.8.9"
+types-tabulate = "^0.8.1"
+pingouin = "^0.3.12"
+</pre>
+
+</div>
+
+</div>
+
+<div>
+
+## Development
+
+<style>
+  h2 {
+    font-size: 36px;
+    @apply text-orange-600 mb-4;
+  }
+  ul {
+    @apply text-7xl text-orange-600 mb-4;
+  }
+  li {
+    font-size: 22px;
+    margin-bottom: 10px;
+  }
+</style>
+
+<div class="border-2 rounded-2xl border-gray-700 bg-true-gray-300 p-5 mr-15">
+
+<pre>
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+pylint = "^2.6.0"
+black = "^20.8b1"
+pydocstyle = "^5.1.1"
+flake8 = "^3.8.4"
+taskipy = "^1.8.1"
+pytest-cov = "^2.11.1"
+mypy = "^0.910"
+pandas-stubs = "^1.1.0"
+types-requests = "^2.25.0"
+responses = "^0.13.3"
+
+[tool.poetry.scripts]
+workknow = "workknow.main:cli"
+</pre>
+
+</div>
+
+</div>
+
+</div>
+
+<br>
+
+<div v-click>
+
+<div class="flex row">
+
+<uim-grid class="text-6xl ml-8 mt-6 text-blue-600" />
+
+<div class="text-3xl font-bold mt-10 ml-4">
+Typer installs packages into the virtual environment
+</div>
 
 </div>
 
