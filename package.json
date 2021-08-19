@@ -12,7 +12,7 @@
     "@slidev/cli": "^0.22.0",
     "@slidev/theme-default": "*",
     "@slidev/theme-seriph": "*",
-    "playwright-chromium": "^1.11.1"
+    "playwright-chromium": "^1.13.0"
   },
   "name": "simple-slidev-sample"
 }
