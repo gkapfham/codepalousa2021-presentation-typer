@@ -592,6 +592,8 @@ See <code>AnalyzeActions/WorkKnow</code> for details!
 
 ---
 
+[//]: # (Slide Start {{{)
+
 ## Command-Line Interface Documentation
 
 <style>
@@ -644,6 +646,8 @@ Options:
 </div>
 
 </div>
+
+[//]: # (Slide End }}})
 
 ---
 
