@@ -394,6 +394,10 @@ tool!
   ul {
     @apply text-7xl text-orange-600 mb-4;
   }
+  li {
+    font-size: 22px;
+    margin-bottom: 10px;
+  }
 </style>
 
 <br>
@@ -429,7 +433,9 @@ tool!
 
 </div>
 
-<div class="flex row mt-19 text-2xl">
+<v-click>
+
+<div class="flex row mt-18 text-2xl">
 
 - Create a simple directory structure
 - Default support for testing with Pytest
@@ -439,6 +445,8 @@ tool!
 - The poetry.lock file pins dependencies
 
 </div>
+
+</v-click>
 
 </div>
 
