@@ -590,37 +590,9 @@ See <code>AnalyzeActions/WorkKnow</code> for details!
 
 </v-click>
 
-<!--
-
-Let's create a command-line interface for WorkKnow.
-
-If you have not yet tried the Typer package for the construction of command-line
-interfaces in Python then you should right away! It is awesome!
-
-Now we can review this source code segment to better understand how Typer works
-and how it uses type annotations.
-
-<br>
-
-**Review each highlighted line of source code.**
-
-- The first four lines of the function import typer and designate that the
-download will be one of the program's main commands
-
-- Download's first parameter is a list of GitHub repository URLs with builds to
-analyze
-
-- The next three parameters are pathlib Path objects to files and directories
-that WorkKnow needs to collect inputs and save output
-
-WorkKnow's command-line interface also accepts other arguments. Checkout its
-GitHub repository for more details!
-
--->
-
 ---
 
-## Command-Line Interface
+## Command-Line Interface Documentation
 
 <style>
   h2 {
