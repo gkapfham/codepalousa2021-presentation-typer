@@ -834,6 +834,58 @@ Next steps for a Poetry-based application?
 
 [//]: # (Slide End }}})
 
+---
+
+[//]: # (Slide Start {{{)
+
+# Publishing a Package to PyPI
+
+<style>
+  h2 {
+    font-size: 36px;
+    @apply text-orange-600 mb-4;
+  }
+</style>
+
+<br>
+
+<div v-click>
+
+## Poetry Build
+
+> Creates the project's "wheel", the standard format for Python packages. User
+> installation of the .whl is possible. Program works without use
+> of Poetry!
+
+</div>
+
+<br>
+
+<div v-click>
+
+## Poetry Publish
+
+> After creating a PyPI authorization token and configuring Poetry to use it,
+> the publish command makes it available to everyone through PyPI!
+
+</div>
+
+<div v-click>
+
+<div class="flex row">
+
+<uim-rocket class="text-6xl ml-8 mt-5 text-blue-600" />
+
+<div class="text-3xl font-bold mt-8 ml-4">
+Program is available for installation with pip or pipx!
+</div>
+
+</div>
+
+</div>
+
+[//]: # (Slide End }}})
+
 
 ---
 
