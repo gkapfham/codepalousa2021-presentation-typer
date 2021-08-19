@@ -397,8 +397,6 @@ tool!
   }
 </style>
 
-<div v-click>
-
 ## poetry new workknow
 
 <div class="flex row">
@@ -446,11 +444,11 @@ tool!
 
 </div>
 
-</div>
-
 [//]: # (Slide End }}})
 
 ---
+
+<v-click>
 
 <div class="ml-8 grid grid-cols-2 gap-9">
 
@@ -468,6 +466,7 @@ tool!
     margin-bottom: 10px;
   }
 </style>
+
 
 <div class="border-2 rounded-2xl border-gray-700 bg-true-gray-300 p-5 mr-15">
 
@@ -537,6 +536,8 @@ workknow = "workknow.main:cli"
 
 </div>
 
+</v-click>
+
 <br>
 
 <div v-click>
@@ -546,7 +547,7 @@ workknow = "workknow.main:cli"
 <uim-grid class="text-6xl ml-8 mt-6 text-blue-600" />
 
 <div class="text-3xl font-bold mt-10 ml-4">
-Typer installs packages into the virtual environment
+Poetry installs packages into the virtual environment
 </div>
 
 </div>
