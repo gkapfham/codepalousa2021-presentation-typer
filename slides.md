@@ -140,9 +140,16 @@ What is challenging about programming in Python?
 
 [//]: # (Slide Start {{{)
 
+<style>
+  li {
+  font-size: 26px;
+  margin-bottom: 1px;
+  }
+</style>
+
 <div class="flex row">
 
-<mdi-package-variant class="text-8xl ml-9 mt-8 text-orange-600" />
+<mdi-package-variant class="text-8xl ml-6 mt-8 text-orange-600" />
 
 <div class="text-6xl text-true-gray-600 font-bold mt-8 ml-4">
 Creating virtual environments
@@ -162,7 +169,7 @@ Creating virtual environments
 
 <div class="flex row">
 
-<mdi-package-up class="text-8xl ml-9 mt-8 text-orange-600" />
+<mdi-package-up class="text-8xl ml-6 mt-8 text-orange-600" />
 
 <div class="text-6xl text-true-gray-600 font-bold mt-8 ml-4">
 Publishing packages to PyPI
@@ -184,7 +191,7 @@ Publishing packages to PyPI
 
 <div class="flex row">
 
-<mdi-console class="text-8xl ml-9 mt-8 text-orange-600" />
+<mdi-console class="text-8xl ml-6 mt-8 text-orange-600" />
 
 <div class="text-6xl text-true-gray-600 font-bold mt-8 ml-4">
 Making command-line interfaces
@@ -546,7 +553,7 @@ workknow = "workknow.main:cli"
 
 <div class="flex row">
 
-<uim-grid class="text-6xl ml-8 mt-6 text-blue-600" />
+<uim-box class="text-6xl ml-8 mt-6 text-blue-600" />
 
 <div class="text-3xl font-bold mt-10 ml-4">
 Poetry installs packages into the virtual environment
@@ -600,6 +607,44 @@ See <code>AnalyzeActions/WorkKnow</code> for details!
 
 [//]: # (Slide Start {{{)
 
+# Adding Extra Commands with Typer
+
+<div class="ml-2 my-2">
+
+```python {all|3-10|5|6|7|8-9|all}
+import typer
+cli = typer.Typer()
+@cli.command()
+def analyze(
+    results_dir: Path = typer.Option(None),
+    plugin: str = typer.Option(""),
+    save: bool = typer.Option(False),
+    debug_level: debug.DebugLevel =
+                   debug.DebugLevel.ERROR,
+):
+```
+
+</div>
+
+<v-click>
+
+<div class="flex row">
+
+<div class="text-3xl font-medium mt-4 ml-4">
+<code>AnalyzeActions/WorkKnow</code> contains many commands
+</div>
+
+</div>
+
+</v-click>
+
+[//]: # (Slide End }}})
+
+
+---
+
+[//]: # (Slide Start {{{)
+
 ## Command-Line Interface Documentation
 
 <style>
@@ -638,7 +683,7 @@ Options:
 
 <div class="flex row">
 
-<uim-rocket class="text-9xl ml-5 mt-5 text-blue-600" />
+<uim-grid class="text-9xl ml-5 mt-5 text-blue-600" />
 
 <div class="text-3xl font-bold mt-7 ml-4">
 
@@ -712,7 +757,7 @@ poetry run workknow download --repos-csv-file [CSV File]
 <mdi-help-box class="text-6xl ml-16 mt-6 text-blue-600" />
 
 <div class="text-3xl font-bold mt-10 ml-4">
-What else is possible when using Poetry?
+What other cool features does Poetry support?
 </div>
 
 </div>
@@ -758,15 +803,29 @@ test = { cmd = "pytest -x -s" }
 
 <div class="flex row">
 
-<uim-rocket class="text-9xl ml-5 mt-5 text-blue-600" />
+<uim-check-square class="text-9xl ml-5 mt-5 text-blue-600" />
 
 <div class="text-3xl font-bold mt-7 ml-4">
 
 - Combining Poetry with Taskipy offers:
-  - automatically generate all menus
-  - perform error checking on all arguments
-  - convert all arguments to the correct type
+  - task specification in pyproject.toml file
+  - task execution through use of Poetry
+  - "poetry run task all" to run all tasks
 
+</div>
+
+</div>
+
+</div>
+
+<div v-click>
+
+<div class="flex row">
+
+<mdi-help-box class="text-6xl ml-16 mt-4 text-blue-600" />
+
+<div class="text-3xl font-bold mt-8 ml-4">
+Next steps for a Poetry-based application?
 </div>
 
 </div>
