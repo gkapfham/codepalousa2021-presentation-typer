@@ -253,7 +253,7 @@ Poetry: <code>https://python-poetry.org/</code>
 <div class="ml-8 grid grid-cols-2 gap-19">
 <div>
 
-# Challenges
+# Typer
 
 <style>
   li {
@@ -262,7 +262,7 @@ Poetry: <code>https://python-poetry.org/</code>
   }
 </style>
 
-- *Readability* : function signatures are more difficult to read
+- *Annotations* : assign types to functions accepting arguments
 - *Productivity* : programmers often must add type annotations
 - *Complexity* : programs use many new classes and types
 
@@ -272,11 +272,11 @@ Poetry: <code>https://python-poetry.org/</code>
 
 <div>
 
-# Benefits
+# Poetry
 
-- *Fail-fast* : quickly catch errors before running Python programs
-- *Tooling* : text editors signal problems to programmers
-- *Understanding* : developers understand the structure of data
+- *Environments* : manage dependencies in isolation
+- *Package* : create a stand-alone executable application
+- *Publish* : expedite the release of program to PyPI
 
 </div>
 
@@ -312,49 +312,7 @@ Mypy static type checker in terminal or editor
 
 </div>
 
-<!--
-
-Let's first address the challenges associated with regularly applying type
-annotations to the functions in a Python program:
-
-**[[Read the list of challenges]]**
-
-Let me also tell you about some of the benefits that accrue from adding type
-annotations to your Python program.
-
-**[[Read the list of benefits]]**
-
-Some of these benefits will only be evident if you use the right tools.
-Let's investigate the landscape of tool support before moving on!
-
-- **Using text editors that integrate with language servers**
-- **Using the mypy type checker in your terminal window of text editor**
-
-In my experience, Pyright and mypy are exceptional tools that have detected many
-defects in my code before I ran either the test suite or the program itself.
-
-**CUT IN SHORT VERSION**
-
-For my recent Python projects, I setup Pyright to run asynchronously in Neovim
-and to highlight problems as soon as they are detected. I also run mypy in my
-terminal window and in GitHub actions whenever I push a commit to a branch.
-
-**Full screen video -- CUT IN SHORT VERSION**
-
-Okay, let's recap where we're at in this talk!
-
-I acknowledge that it has taken time for me to understand better how to
-interpret the output of these tools -- and to know when to ignore their output!
-However, I've seen evidence that they help me write better Python programs.
-
-In the remainder of the talk I want to highlight some of my experiences in
-building a Python program with type annotations. Specifically, I want to show
-you how using type annotations can give you features "nearly for free" and help
-you to find bugs very quickly. If you check the notes for this video on YouTube
-you will see references to the project I built. Check out the source code that I
-wrote and share your feedback on either YouTube or GitHub!
-
--->
+[//]: # (Slide End }}})
 
 ---
 
@@ -538,182 +496,6 @@ Options:
 </div>
 
 </div>
-
-<!--
-
-This is what would appear in your terminal window if you typed "workknow
-download --help". It is important to stress that:
-
-<br>
-
-**Transition to and explain the bottom list on the slide.**
-
-- Using type annotations, Typer can automatically generate all of the menus,
-like the one you see here.
-
-- Since Typer know the type of each command-line argument it can perform error
-checking to make sure that a person definitely uses the right arguments.
-
-- Amazingly, Typer can also convert all of the strings that a person passes into
-the program on the command-line into the correct type for the program! For
-instance, if the program accepts a string that points to the directory in which
-WorkKnow should store the data, then Typer will convert that string to a pathlib
-Path without any effort on the part of the programmer! Fantastic!
-
-**CUT IN SHORT VERSION**
-
-, for instance, a string or a boolean in the right order and for the right
-parameter. If you have ever built a command-line interface using argparse then
-you probably remember how long it took you to write the error-prone code that
-verifies the arguments. Now, as long as you add the type of each variable, Typer
-can do all of this work for you!
-
-- Finally, did you notice how Typer will only allow a person to specify specific
-values for the debugging level command-line argument. Again, this feature is due
-to the fact that source code stipulated that it was of the type DebugLevel.
-
--->
-
----
-
-# Defect Detection with Pyright
-
-```python {all}
-def create_results_zip_file(
-    results_dir: Path, results_files: List[str]
- ) -> None:
-    """Make a .zip file of all results."""
-    with zipfile.ZipFile(
-        "results/All-WorkKnow-Results.zip",
-        "w",
-    ) as results_zip_file:
-        for results_file in results_files:
-            results_zip_file.write(results_files)
-```
-
-<v-click>
-
-<mdi-message-question-outline class="text-8xl absolute top-108 left-8 text-orange-600" />
-<mdi-bug class="text-8xl absolute top-105 left-34 text-orange-600" />
-
-</v-click>
-
-<!--
-
-One of WorkKnow's features is that it can create a ZIP file of all the results
-that it saves about the history of GitHub Action workflows for different
-projects. This feature has come in handy when the data that it downloads is too
-large to send to someone on a per-file basis.
-
-When I first wrote this function, I did so in the way that you see right now.
-That leads me to my next question:
-
-- Can you find the bug in this program?
-
-Thankfully, Pyright can find it for us!
-
-**CUT IN SHORT VERSION**
-
-After walking through the source code for this function, I have a story to tell
-you about how type annotations helped me to implement it correctly!
-
-**Explain each line of source code in the function.**
-
-Although I acknowledge that the defect is a small one and that, in fact, I would
-have been able to find it without using type annotations and type checkers, I'm
-delighted to report that pyright found it for me immediately! I appreciate
-pyright because it works asynchronously in the background, pointing out likely problems
-while I focus on the next feature or test that I want to write.
-
--->
-
----
-
-<v-click>
-
-## Pyright Feedback in VS Code
-
-<style>
-  h2 {
-    font-size: 42px;
-    @apply text-orange-600 mb-4;
-  }
-  li {
-    font-size: 28px;
-    margin-top: 4px;
-    margin-bottom: 9px;
-    }
-  pre {
-    @apply text-3xl
-  }
-</style>
-
-<div class="border-3 rounded-2xl border-gray-700 bg-true-gray-300 p-5 mb-6">
-
-<pre>
-Argument of type "List[str]" cannot be
-assigned to parameter "filename" of
-type "StrPath" in function "write"
-</pre>
-
-</div>
-
-</v-click>
-
-<v-click>
-
-```python
-with zipfile.ZipFile(
-    "results/All-WorkKnow-Results.zip",
-    "w",
-) as results_zip_file:
-    for results_file in results_files:
-        results_zip_file.write(results_files)
-```
-
-</v-click>
-
-<v-click>
-
-<mdi-bug class="text-8xl absolute top-99 left-215 text-orange-600" />
-
-</v-click>
-
-<v-click>
-
-<mdi-arrow-up class="text-6xl absolute top-118 left-175 text-orange-600" />
-
-</v-click>
-
-<v-click >
-
-<div class="text-8xl ml-100 mt-5">
-
-<code>results_file</code>
-
-</div>
-
-</v-click>
-
-<!--
-
-Let's take a look at the error message that Pyright shared with me!
-
-**Read the error message.**
-
-As soon as I read this message I realized that I need to focus on the call to
-the write function and the parameter that I passed to it. After contemplating
-Pyright's error again, I realized that I had made a mistake by passing
-results_files, a list containing strings, instead of results_file, the specific
-file, to the write function.
-
-Yep, one extra s would have caused a major problem when I either ran the test
-suite or the program itself! Of course, it is reasonable to ask whether or not I
-would have found this bug by other means. Yes, I think that I would have! But,
-it was nice to find it so quickly through the use of type annotations and the
-Pyright type checker.
-
--->
 
 ---
 
