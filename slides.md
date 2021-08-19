@@ -359,35 +359,7 @@ AnalyzeActions/WorkKnow
 
 </v-clicks>
 
-<!--
-
-In the remainder of this talk I'm going to use source code and type checker
-output to tell you two stories!
-
-- **Read the command-line interface comment**
-- **Read the defect finding comments**
-
-The experiences that I share in this talk took place in the context of building
-an open-source program, called WorkKnow, that keeps you "in the know" about the
-history of workflow builds on GitHub Actions. WorkKnow uses GitHub's REST API to
-download the history of workflow executions. It then extracts, parses, and
-summarizes the data and stores the most important results in CSV files.
-
-**CUT IN SHORT VERSION**
-
-I'm building and using WorkKnow because it helps me to gain insights into the
-trends evident in both my GitHub action workflows and the workflows of popular
-projects that leverage GitHub Actions.
-
-If you would like to try out WorkKnow you can find it in the AnalyzeActions
-organization on GitHub. Even though the tool is in a very early stage of
-development, I hope that you will try it out, raise issues, and add new
-features.
-
-Okay, let's dive into my experience with using type annotations to build this
-tool!
-
--->
+[//]: # (Slide End }}})
 
 ---
 
