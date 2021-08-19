@@ -651,6 +651,72 @@ Options:
 
 ---
 
+[//]: # (Slide Start {{{)
+
+## Running the Program with Poetry
+
+<style>
+  h2 {
+    font-size: 42px;
+    @apply text-orange-600 mb-4;
+  }
+  li {
+    font-size: 28px;
+    margin-top: 4px;
+    margin-bottom: 9px;
+  }
+</style>
+
+<div class="border-2 rounded-2xl border-gray-700 bg-true-gray-300 p-5">
+
+<pre>
+poetry run workknow download --repos-csv-file [CSV File]
+                             --env-file [ENV File]
+                             --results-dir [Results Directory]
+                             --debug-level ERROR
+                             --save
+                             --combine
+</pre>
+
+</div>
+
+<div v-click>
+
+<div class="flex row">
+
+<uim-box class="text-9xl ml-5 mt-5 text-blue-600" />
+
+<div class="text-3xl font-bold mt-7 ml-4">
+
+- Poetry takes the following steps:
+  - load dependencies into virtual environment
+  - locate the "script" variable that defines main
+  - invoke the main function and pass control
+
+</div>
+
+</div>
+
+</div>
+
+<div v-click>
+
+<div class="flex row">
+
+<mdi-help-box class="text-6xl ml-16 mt-6 text-blue-600" />
+
+<div class="text-3xl font-bold mt-10 ml-4">
+What else is possible when using Poetry?
+</div>
+
+</div>
+
+</div>
+
+[//]: # (Slide End }}})
+
+---
+
 # Type Annotations in Python
 
 <style>
