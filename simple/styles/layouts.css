@@ -3,11 +3,11 @@
   @apply h-full grid;
 
   h1 {
-    @apply text-6xl -my-2 leading-20 font-bold text-dark-100 text-orange-600;
+    @apply text-7xl -my-2 leading-20 mb-4 font-bold text-dark-100 text-orange-600;
   }
 
   h2 {
-    @apply text-4xl leading-20 font-bold text-blue-600 -mb-5;
+    @apply text-5xl leading-20 font-bold text-blue-600 -mb-5;
   }
 
   h3 {
