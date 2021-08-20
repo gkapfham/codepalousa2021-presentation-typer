@@ -958,6 +958,33 @@ Black: Install and run a code formatter for all Python files
 
 [//]: # (Slide End }}})
 
+---
+
+# Defect Detection with MyPy
+
+[//]: # (Slide Start {{{)
+
+```python {all}
+def create_results_zip_file(
+    results_dir: Path, results_files: List[str]
+ ) -> None:
+    """Make a .zip file of all results."""
+    with zipfile.ZipFile(
+        "results/All-WorkKnow-Results.zip",
+        "w",
+    ) as results_zip_file:
+        for results_file in results_files:
+            results_zip_file.write(results_files)
+```
+
+<v-click>
+
+<mdi-message-question-outline class="text-8xl absolute top-108 left-8 text-orange-600" />
+<mdi-bug class="text-8xl absolute top-105 left-34 text-orange-600" />
+
+</v-click>
+
+[//]: # (Slide End }}})
 
 ---
 
