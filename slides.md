@@ -218,7 +218,7 @@ Making command-line interfaces
 <div class="flex row">
 
 <div class="text-7xl text-orange-600 font-bold mt-5 ml-4 mb-4">
-What are the downsides of other packages?
+What are the downsides of these packages?
 </div>
 
 </div>
@@ -619,7 +619,7 @@ def download(
 
 <v-click>
 
-<div class="flex row">
+<div class="flex row mt-4">
 
 <uim-github class="text-7xl ml-0 mt-0 text-blue-600" />
 
@@ -661,7 +661,7 @@ def analyze(
 <div class="flex row">
 
 <div class="text-3xl font-medium mt-4 ml-4">
-<code>AnalyzeActions/WorkKnow</code> contains many commands
+<code>AnalyzeActions/WorkKnow</code> contains several commands
 </div>
 
 </div>
@@ -711,7 +711,7 @@ Options:
 
 <div v-click>
 
-<div class="flex row">
+<div class="flex row ml-4">
 
 <uim-grid class="text-9xl ml-5 mt-5 text-blue-600" />
 
@@ -855,59 +855,7 @@ test = { cmd = "pytest -x -s" }
 <mdi-help-box class="text-6xl ml-16 mt-4 text-blue-600" />
 
 <div class="text-3xl font-bold mt-8 ml-4">
-Next steps for a Poetry-based application?
-</div>
-
-</div>
-
-</div>
-
-[//]: # (Slide End }}})
-
----
-
-[//]: # (Slide Start {{{)
-
-# Publishing a Package to PyPI
-
-<style>
-  h2 {
-    font-size: 36px;
-    @apply text-orange-600 mb-4;
-  }
-</style>
-
-<br>
-
-<div v-click>
-
-## Poetry Build
-
-> Creates the project's "wheel", the standard format for Python packages. User
-> installation of the .whl is possible. Program works without use
-> of Poetry!
-
-</div>
-
-<br>
-
-<div v-click>
-
-## Poetry Publish
-
-> After creating a PyPI authorization token and configuring Poetry to use it,
-> the publish command makes it available to everyone through PyPI!
-
-</div>
-
-<div v-click>
-
-<div class="flex row">
-
-<uim-rocket class="text-6xl ml-8 mt-5 text-blue-600" />
-
-<div class="text-3xl font-bold mt-8 ml-4">
-Program is available for installation with pip or pipx!
+What are the benefits of running these tasks?
 </div>
 
 </div>
@@ -923,7 +871,7 @@ Program is available for installation with pip or pipx!
 <div class="flex row">
 
 <div class="text-7xl text-orange-600 font-bold mt-5 ml-4 mb-4">
-What else is possible when you use Poetry?
+Benefits of type checking and code formatting?
 </div>
 
 </div>
@@ -1056,6 +1004,58 @@ with zipfile.ZipFile(
 
 </v-click>
 
+
+[//]: # (Slide End }}})
+
+---
+
+[//]: # (Slide Start {{{)
+
+# Publishing a Package to PyPI
+
+<style>
+  h2 {
+    font-size: 36px;
+    @apply text-orange-600 mb-4;
+  }
+</style>
+
+<br>
+
+<div v-click>
+
+## Poetry Build
+
+> Creates the project's "wheel", the standard format for Python packages. User
+> installation of the .whl is possible. Program works without use
+> of Poetry!
+
+</div>
+
+<br>
+
+<div v-click>
+
+## Poetry Publish
+
+> After creating a PyPI authorization token and configuring Poetry to use it,
+> the publish command makes it available to everyone through PyPI!
+
+</div>
+
+<div v-click>
+
+<div class="flex row -ml-2">
+
+<uim-rocket class="text-6xl ml-8 mt-5 text-blue-600" />
+
+<div class="text-3xl font-bold mt-8 ml-4">
+Program is available for installation with pip or pipx!
+</div>
+
+</div>
+
+</div>
 
 [//]: # (Slide End }}})
 
@@ -1245,7 +1245,7 @@ Share your experiences with the Python community!
   }
 </style>
 
-## Easily combine the use of Typer and Poetry
+## Typer and Poetry effectively work together!
 
 <v-clicks>
 
