@@ -11,9 +11,7 @@
   "dependencies": {
     "@slidev/cli": "^0.22.0",
     "@slidev/theme-default": "*",
-    "@slidev/theme-seriph": "*",
-    "playwright": "^1.14.0",
-    "playwright-chromium": "^1.13.0"
+    "@slidev/theme-seriph": "*"
   },
   "name": "simple-slidev-sample"
 }
