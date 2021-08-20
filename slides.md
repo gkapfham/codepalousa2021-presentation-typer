@@ -1020,10 +1020,11 @@ Share your experiences with the Python community!
 
 </div>
 
-
 [//]: # (Slide End }}})
 
 ---
+
+[//]: # (Slide Start {{{)
 
 # Tool Development with Python
 
@@ -1075,7 +1076,11 @@ Poetry handles dependencies and releases
 
 </v-clicks>
 
+[//]: # (Slide End }}})
+
 ---
+
+[//]: # (Slide Start {{{)
 
 # Tool Development with Python
 
@@ -1126,3 +1131,5 @@ gkapfham/codepalousa2021-presentation-typer
 </div>
 
 </v-clicks>
+
+[//]: # (Slide End }}})
