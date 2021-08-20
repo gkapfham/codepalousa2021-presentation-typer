@@ -920,6 +920,49 @@ Program is available for installation with pip or pipx!
 
 [//]: # (Slide Start {{{)
 
+<div class="flex row">
+
+<div class="text-7xl text-orange-600 font-bold mt-5 ml-4 mb-4">
+What else is possible when you use Poetry?
+</div>
+
+</div>
+
+<div v-click>
+
+<div class="flex row">
+
+<mdi-alert-circle-check class="text-8xl ml-8 mt-6 text-blue-600" />
+
+<div class="text-5xl font-bold mt-8 ml-4">
+MyPy: Install and run a type checker on code modules
+</div>
+
+</div>
+
+</div>
+
+<div v-click>
+
+<div class="flex row">
+
+<mdi-format-align-middle class="text-8xl ml-8 mt-6 text-blue-600" />
+
+<div class="text-5xl font-bold mt-8 ml-4">
+Black: Install and run a code formatter for all Python files
+</div>
+
+</div>
+
+</div>
+
+[//]: # (Slide End }}})
+
+
+---
+
+[//]: # (Slide Start {{{)
+
 <div class="ml-8 grid grid-cols-2 gap-19">
 <div>
 
