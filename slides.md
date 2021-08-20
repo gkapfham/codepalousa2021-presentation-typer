@@ -218,7 +218,7 @@ Making command-line interfaces
 <div class="flex row">
 
 <div class="text-7xl text-orange-600 font-bold mt-5 ml-4 mb-4">
-What are the downsides of these packages?
+What are the downsides of these tools?
 </div>
 
 </div>
