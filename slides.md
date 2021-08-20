@@ -960,7 +960,7 @@ Black: Install and run a code formatter for all Python files
 
 ---
 
-# Defect Detection with MyPy
+# Defect Detection with Type Checker
 
 [//]: # (Slide Start {{{)
 
@@ -983,6 +983,79 @@ def create_results_zip_file(
 <mdi-bug class="text-8xl absolute top-105 left-34 text-orange-600" />
 
 </v-click>
+
+[//]: # (Slide End }}})
+
+---
+
+[//]: # (Slide Start {{{)
+
+<v-click>
+
+## Automated Type Checker Feedback
+
+<style>
+  h2 {
+    font-size: 42px;
+    @apply text-orange-600 mb-4;
+  }
+  li {
+    font-size: 28px;
+    margin-top: 4px;
+    margin-bottom: 9px;
+    }
+  pre {
+    @apply text-3xl
+  }
+</style>
+
+<div class="border-3 rounded-2xl border-gray-700 bg-true-gray-300 p-5 mb-6">
+
+<pre>
+Argument of type "List[str]" cannot be
+assigned to parameter "filename" of
+type "StrPath" in function "write"
+</pre>
+
+</div>
+
+</v-click>
+
+<v-click>
+
+```python
+with zipfile.ZipFile(
+    "results/All-WorkKnow-Results.zip",
+    "w",
+) as results_zip_file:
+    for results_file in results_files:
+        results_zip_file.write(results_files)
+```
+
+</v-click>
+
+<v-click>
+
+<mdi-bug class="text-8xl absolute top-99 left-215 text-orange-600" />
+
+</v-click>
+
+<v-click>
+
+<mdi-arrow-up class="text-6xl absolute top-118 left-175 text-orange-600" />
+
+</v-click>
+
+<v-click >
+
+<div class="text-8xl ml-100 mt-5">
+
+<code>results_file</code>
+
+</div>
+
+</v-click>
+
 
 [//]: # (Slide End }}})
 
