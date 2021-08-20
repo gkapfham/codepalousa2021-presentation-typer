@@ -974,6 +974,12 @@ Poetry: <code>https://python-poetry.org/</code>
 
 [//]: # (Slide Start {{{)
 
+<style>
+  code {
+    font-size: 26px;
+  }
+</style>
+
 <div class="flex row">
 
 <div class="text-7xl text-orange-600 font-bold mt-3 ml-4 mb-2">
@@ -987,7 +993,7 @@ Great resources for learning more about these Python tools?
 <div class="flex row">
 
 <div class="text-4xl font-bold mt-8 ml-4">
-https://typer.tiangolo.com/tutorial/package/
+<code>https://typer.tiangolo.com/tutorial/package/</code>
 </div>
 
 </div>
@@ -999,7 +1005,7 @@ https://typer.tiangolo.com/tutorial/package/
 <div class="flex row">
 
 <div class="text-3xl font-bold mt-8 ml-4">
-https://realpython.com/effective-python-environment/
+<code>https://realpython.com/effective-python-environment/</code>
 </div>
 
 </div>
