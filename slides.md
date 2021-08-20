@@ -938,8 +938,6 @@ def create_results_zip_file(
 
 [//]: # (Slide Start {{{)
 
-<v-click>
-
 ## Automated Type Checker Feedback
 
 <style>
@@ -966,8 +964,6 @@ type "StrPath" in function "write"
 </pre>
 
 </div>
-
-</v-click>
 
 <v-click>
 
@@ -1258,7 +1254,7 @@ Great resources for learning more about these Python tools?
 
 <div class="flex row">
 
-<uim-comment-message class="text-6xl ml-8 mt-8 text-blue-600" />
+<uim-comment-message class="text-6xl ml-6 mt-8 text-blue-600" />
 
 <div class="text-3xl font-bold mt-12 ml-4">
 Share your experiences with the Python community!
