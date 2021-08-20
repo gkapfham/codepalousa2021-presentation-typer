@@ -1011,6 +1011,49 @@ with zipfile.ZipFile(
 
 [//]: # (Slide Start {{{)
 
+<div class="flex row">
+
+<div class="text-7xl text-orange-600 font-bold mt-5 ml-4 mb-4">
+How to build and publish a Python package?
+</div>
+
+</div>
+
+<div v-click>
+
+<div class="flex row">
+
+<mdi-domain class="text-8xl ml-8 mt-6 text-blue-600" />
+
+<div class="text-5xl font-bold mt-8 ml-4">
+Build: create package in standard format
+</div>
+
+</div>
+
+</div>
+
+<div v-click>
+
+<div class="flex row">
+
+<mdi-table-arrow-right class="text-8xl ml-8 mt-6 text-blue-600" />
+
+<div class="text-5xl font-bold mt-8 ml-4">
+Publish: publicly release the package to PyPI
+</div>
+
+</div>
+
+</div>
+
+[//]: # (Slide End }}})
+
+
+---
+
+[//]: # (Slide Start {{{)
+
 # Publishing a Package to PyPI
 
 <style>
